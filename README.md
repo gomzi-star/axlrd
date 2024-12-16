@@ -14,16 +14,19 @@ Elegimos primero $F=Q=3$
   <img src="images/Cuadrada(3-3).png" width="70%">
 </p>
 
+---
 Luego $F=2,Q=5$
 <p align="center">
   <img src="images/Cuadrada(2-5).png" width="70%">
 </p>
 
+---
 Seguimos con $F=5,Q=3$
 <p align="center">
   <img src="images/Cuadrada(5-3).png" width="70%">
 </p>
 
+---
 Y por ultimo  $F=5,Q=5$
 <p align="center">
   <img src="images/Cuadrada(5-5).png" width="70%">
@@ -45,6 +48,7 @@ Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.  Para este caso la red tr
   <img src="images/F10(4-2)AllvAll.png" width="70%">
 </p>
 
+---
 A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ y comparamos sobre $t=12000$ pasos. Ahora si se nota una diferencia entre la red cuadrada, que logra converger, y la red triangular que apenas llega al %$55.55$ de poblacón mayoritaria. Sigue siendo notable la rapidez la red completa, con un gran salto entre el tiempo $t=4000$ con %$5.55$ al tiempo $t=8000$ con la totalidad. 
 <p align="center">
   <img src="images/F10(6-4)Cuadrada.png" width="70%">
@@ -57,6 +61,7 @@ A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ 
   <img src="images/F10(6-4)AllvAll.png" width="70%">
 </p>
 
+---
 Manteniendo las posibilidades $Q=4$ con un mayor tamaño $L=8$ y comparamos sobre $t=30000$ pasos. Nuevamente se ve la diferencia entre la red triangular y la cuadrada, aunque en este caso particular, la convergencia de la red cuadrada es parecida a la del grafo completo.
 <p align="center">
   <img src="images/F10(8-4)Cuadrada.png" width="70%">
@@ -70,6 +75,7 @@ Manteniendo las posibilidades $Q=4$ con un mayor tamaño $L=8$ y comparamos sobr
   <img src="images/F10(8-4)AllvAll.png" width="70%">
 </p>
 
+---
 Seguimos con $L=10,Q=5$ sobre $90000$ pasos. En este caso los tres modelos convergen al final, con diferencias en la proporcion de salto desde el antepenultimo estado reportado, digamos: $100/18=5.55$ para la red cuadrada, $100/50=2$ para la triangular y $100/16=6.25$ para la completa. 
 <p align="center">
   <img src="images/F10(10-5)Cuadrada.png" width="70%">
@@ -81,6 +87,7 @@ Seguimos con $L=10,Q=5$ sobre $90000$ pasos. En este caso los tres modelos conve
   <img src="images/F10(10-5)AllvAll.png" width="70%">
 </p>
 
+---
 Y por ultimo aumentamos masivamente el tamaño $L=18$ con la misma cantidad de opciones anterior $Q=5$ comparando también a $90000$ pasos. En este ejémplo ve nuevamente una mucho mayor rapidez en convergencia de la red cuadra. Como siempre gana la completa y con aun mayor proporción de salto al final $3.21$ en la caudrada vs $6.66$ en la completa.
 <p align="center">
   <img src="images/F10(18-5)Cuadrada.png" width="70%">
@@ -105,6 +112,7 @@ Primero para $F=2$ y tamaños $L=4$ (azul) y $L=10$ (naranja), variamos para los
 
 Al ser $F=2$ chico, con el crecimiento de $Q$ rapidamente resulta en un decrecimiento del tamño mayoritario alcanzado, sin importar el tamaño $L$, aunque de manera mas pronunciada para el sistema más grande.
 
+---
 Luego para $F=10$ y tamaño $L=4$ (azul) variamos para los naturales $Q\in[1,60]$ y sobre cada uno de estos valores tomamos el promedio de $40$ evoluciones de $20000$ pasos. Por otro lado para tamaño $L=10$ (naranja) variamos para los naturales $Q\in[1,15]$ y sobre cada uno de estos valores tomamos el promedio de $30$ evoluciones de $20000$ pasos
 <p align="center">
   <img src="images/QvSmax Cuadrada(4-10).png" width="40%">
@@ -126,6 +134,7 @@ Elegimos primero $L=4,F=2,Q=2$
 
 Es notoria la gran diferencia en la rpapidez de (máxima) convergencia. En el primer caso tarda $1500$ paso para llegar al %$81.25$ de población mayoritaria, mientras que el modelo con publicidad tarda $50$ pasos en llegar al %$75$. Cabe destacar que en el primer caso los estados en el ultimo paso son el $(0,0)$ con 14 nodos, el $(1,0)$ con 2 nodos y el $(0,1)$ por lo tanto todavía hay posibillidad de interacción. Pero en el segundo caso la población mayoritaria nunca podra crecer, justamente el estado de la publicidad $(1,1)$, pues los nodos restantes tienen estado $(0,0)$ y al no compartir ningun atributo, no podran interactuar con ningun vecino distinto (en caso que haya) ni la publicidad los afectara. Podríamos de decir que el sistema en general llego a una ***diferencia irreconciliable***.
 
+---
 Ahora para $L=10,F=8,Q=2$
 <p align="center">
   <img src="images/ScaleFree(10-8-2).png" width="70%">
@@ -136,6 +145,7 @@ Ahora para $L=10,F=8,Q=2$
 
 Con el aumento del tamaño y las freaatures $F$ llegar a la diferencia irreconciliable es menos factible. Por eso es que el primer caso converge  en $1.500.000$ pasos mientras que el segundo converge en $1200$ pasos a la publicidad. Un proporción de diferencia de $1250$!!! 
 
+---
 Por último graficamos $Q$ vs $100(S_{max}/N)$ en el tamaño 	$L=4$ con $F=10$.  Variamos para los naturales $Q\in[1,100]$ con promedio de $30$ evoluciónes por caso. En el primer caso elegimos evoluciónes de $1000$ pasos y para el segundo de $10000$ pasos, mostando en verde los valores de la red sin publividad y en rojo los de la red con publicidad activa
 <p align="center">
   <img src="images/QvSmax ScaleFree(4-10-1e3).png" width="40%">
