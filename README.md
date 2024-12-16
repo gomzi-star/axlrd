@@ -9,6 +9,7 @@ Mostramos a continuación los resultados obtenidos (en el mismo orden que la not
 ## Red Cuadrada de largo $L=4$
 Empezamos con $N=L^2=16$ nodos en un grafo regular de grado 4 , es decir 4 vecinos por nodo.  Y comparmos distintos valores de $F$ y $Q$ a $t=900$ pasos.
 
+---
 Elegimos primero $F=Q=3$
 <p align="center">
   <img src="images/Cuadrada(3-3).png" width="70%">
@@ -32,11 +33,13 @@ Y por ultimo  $F=5,Q=5$
   <img src="images/Cuadrada(5-5).png" width="70%">
 </p>
 
+---
 Podemos observar como los únicos casos que lograron converger son los $Q=3$. Entre estos dos llego mas rápido ($200$ pasos antes) el caso $F=5$.  De la misma manera entre los que no lograron converger $Q=5$, el caso con mayor cantidad de freatures $F=5$ alcanzo un % $56.25$ mientras que para $F=2$ consiguió un % $31.25$ de población mayoritaria. Es decir, de acuerdo a la teoría, mayores valores de $Q$ obstaculizan el arribo al macroestado monocultural, mientras que mayores valores de $F$ lo facilitan. 
 
 ## $F=10$
 Fijamos ahora $F=10$, y variamos $L,Q$ y la topología de la red en grafos regulares de grado 4, 3 y grafos completos.
 
+---
 Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.  Para este caso la red triangular y la cuadrada convergen a una velocidad similiar, claramente llega a un estado monocultural $200$ pasos antes.
 <p align="center">
   <img src="images/F10(4-2)Cuadrada.png" width="70%">
@@ -106,6 +109,7 @@ Y por ultimo aumentamos masivamente el tamaño $L=18$ con la misma cantidad de o
 ## $Q$ vs $S_{max}$ en un Red Cuadrda
 Comparamos ahora la proporicion de la población mayoritaria $100\cdot (S_{max}/N)$ según la cantidad de posibilidades $Q$, en grafos regulares de grado 4 para distintos valores de $L$ y $F$.
 
+---
 Primero para $F=2$ y tamaños $L=4$ (azul) y $L=10$ (naranja), variamos para los naturales $Q\in[1,15]$ y sobre cada uno de estos valores tomamos el promedio de $30$ evoluciones de $10000$ pasos.
 <p align="center">
   <img src="images/QvSmax Cuadrada(4-2).png" width="40%">
@@ -126,6 +130,7 @@ Para el tamaño mas pequeño $L=4$ empezamos a recuperar una curva similar a la 
 ## Grafos Scale Free con y sin 'publicidad'
 Para finalizar analizamos el modelo el grafos scale free, generados con el algoritmo [scale_free_graph](https://networkx.org/documentation/stable/reference/generated/networkx.generators.directed.scale_free_graph.html) y los parámetros de generación *alpha*,*beta* y *gamma* por default. Comparamos también con la variante donde a cada paso de interacción cultural, hay un agente 'externo' de publicidad que también interfiere en la red.
 
+---
 Elegimos primero $L=4,F=2,Q=2$
 <p align="center">
   <img src="images/ScaleFree(4-2-2).png" width="70%">
