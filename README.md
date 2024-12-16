@@ -7,7 +7,7 @@ La definición del algoritmo y su implementación para las dsititntas topologias
 Mostramos a continuación los resultados obtenidos (en el mismo orden que la notebook)
 
 ## Red Cuadrada de largo $L=4$
-Empezamos con $N=L^2=16$ nodos en un grafo regular de grado 4 , es decir 4 vecinos por nodo. 
+Empezamos con $N=L^2=16$ nodos en un grafo regular de grado 4 , es decir 4 vecinos por nodo.  Y comparmos distintos valores de $F$ y $Q$ a $t=900$ pasos.
 
 Elegimos primero $F=Q=3$
 <p align="center">
@@ -31,6 +31,8 @@ Y por ultimo  $F=5,Q=5$
 <p align="center">
   <img src="images/Cuadrada(5-5).png" width="70%">
 </p>
+
+Podemos observar como los únicos casos que lograron converger son los $Q=3$. Entre estos dos llego mas rápido ($200$ pasos antes) el caso $F=5$.  De la misma manera entre los que no lograron converger $Q=5$, el caso con mayor cantidad de freatures $F=5$ alcanzo un % $56.25$ mientras que para $F=2$ consiguió un % $31.25$ de población mayoritaria. Es decir, de acuerdo a la teoría, mayores valores de $Q$ obstaculizan el arribo al macroestado monocultural, mientras que mayores valores de $F$ lo facilitan. 
 
 ## $F=10$
 Fijamos ahora $F=10$, y variamos $L,Q$ y la topología de la red en grafos regulares de grado 4, 3 y grafos completos.
@@ -132,7 +134,7 @@ Elegimos primero $L=4,F=2,Q=2$
   <img src="images/ScaleFreePub(4-2-2).png" width="70%">
 </p>
 
-Es notoria la gran diferencia en la rpapidez de (máxima) convergencia. En el primer caso tarda $1500$ paso para llegar al % $81.25$ de población mayoritaria, mientras que el modelo con publicidad tarda $50$ pasos en llegar al % $75$. Cabe destacar que en el primer caso los estados en el ultimo paso son el $(0,0)$ con 14 nodos, el $(1,0)$ con 2 nodos y el $(0,1)$ por lo tanto todavía hay posibillidad de interacción. Pero en el segundo caso la población mayoritaria nunca podra crecer, justamente el estado de la publicidad $(1,1)$, pues los nodos restantes tienen estado $(0,0)$ y al no compartir ningun atributo, no podran interactuar con ningun vecino distinto (en caso que haya) ni la publicidad los afectara. Podríamos de decir que el sistema en general llego a una ***diferencia irreconciliable***.
+Es notoria la gran diferencia en la rpapidez de (máxima) convergencia. En el primer caso tarda $1500$ paso para llegar al % $81.25$ de población mayoritaria, mientras que el modelo con publicidad tarda $50$ pasos en llegar al % $75$. Cabe destacar que en el primer caso los estados en el ultimo paso son el $(0,0)$ con 13 nodos, el $(1,0)$ con 2 nodos y el $(0,1)$ con 1 nodo, por lo tanto todavía hay posibillidad de interacción. Pero en el segundo caso la población mayoritaria nunca podra crecer, justamente el estado de la publicidad $(1,1)$, pues los nodos restantes tienen estado $(0,0)$ y al no compartir ningun atributo, no podran interactuar con ningun vecino distinto (en caso que haya) ni la publicidad los afectara. Podríamos de decir que el sistema en general llego a una ***diferencia irreconciliable***.
 
 ---
 Ahora para $L=10,F=8,Q=2$
