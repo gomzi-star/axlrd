@@ -49,7 +49,7 @@ Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.  Para este caso la red tr
 </p>
 
 ---
-A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ y comparamos sobre $t=12000$ pasos. Ahora si se nota una diferencia entre la red cuadrada, que logra converger, y la red triangular que apenas llega al %$55.55$ de poblacón mayoritaria. Sigue siendo notable la rapidez la red completa, con un gran salto entre el tiempo $t=4000$ con %$5.55$ al tiempo $t=8000$ con la totalidad. 
+A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ y comparamos sobre $t=12000$ pasos. Ahora si se nota una diferencia entre la red cuadrada, que logra converger, y la red triangular que apenas llega al % $55.55$ de poblacón mayoritaria. Sigue siendo notable la rapidez la red completa, con un gran salto entre el tiempo $t=4000$ con % $5.55$ al tiempo $t=8000$ con la totalidad. 
 <p align="center">
   <img src="images/F10(6-4)Cuadrada.png" width="70%">
 </p>
@@ -122,7 +122,7 @@ Luego para $F=10$ y tamaño $L=4$ (azul) variamos para los naturales $Q\in[1,60]
 Para el tamaño mas pequeño $L=4$ empezamos a recuperar una curva similar a la obtenida por Castellano *et al*. Se mantienen estados de convergnecia en el comienzo, aunque la caida siguiente parece mas pronunciada.  Para $L=10$ la cantidad de pasos elegida resulta deficiente, por ende, el decrecimiento ocurre de manera tan abrupta pasado $Q=1$, con más tiempo de procesmiento quizas podriamos conseguir la curva de referencia.
 
 ## Grafos Scale Free con y sin 'publicidad'
-Para finalizar analizamos el modelo el grafos scale free, generados con el algoritmo [scale_free_graph](https://networkx.org/documentation/stable/reference/generated/networkx.generators.directed.scale_free_graph.html) con los parámetros de generación *alpha*,*beta* y *gamma* por default. Comparamos también con la variante donde a cada paso de interacción cultural, hay un agente 'externo' de publicidad que también interfiere en la red.
+Para finalizar analizamos el modelo el grafos scale free, generados con el algoritmo [scale_free_graph](https://networkx.org/documentation/stable/reference/generated/networkx.generators.directed.scale_free_graph.html) y los parámetros de generación *alpha*,*beta* y *gamma* por default. Comparamos también con la variante donde a cada paso de interacción cultural, hay un agente 'externo' de publicidad que también interfiere en la red.
 
 Elegimos primero $L=4,F=2,Q=2$
 <p align="center">
@@ -132,7 +132,7 @@ Elegimos primero $L=4,F=2,Q=2$
   <img src="images/ScaleFreePub(4-2-2).png" width="70%">
 </p>
 
-Es notoria la gran diferencia en la rpapidez de (máxima) convergencia. En el primer caso tarda $1500$ paso para llegar al %$81.25$ de población mayoritaria, mientras que el modelo con publicidad tarda $50$ pasos en llegar al %$75$. Cabe destacar que en el primer caso los estados en el ultimo paso son el $(0,0)$ con 14 nodos, el $(1,0)$ con 2 nodos y el $(0,1)$ por lo tanto todavía hay posibillidad de interacción. Pero en el segundo caso la población mayoritaria nunca podra crecer, justamente el estado de la publicidad $(1,1)$, pues los nodos restantes tienen estado $(0,0)$ y al no compartir ningun atributo, no podran interactuar con ningun vecino distinto (en caso que haya) ni la publicidad los afectara. Podríamos de decir que el sistema en general llego a una ***diferencia irreconciliable***.
+Es notoria la gran diferencia en la rpapidez de (máxima) convergencia. En el primer caso tarda $1500$ paso para llegar al % $81.25$ de población mayoritaria, mientras que el modelo con publicidad tarda $50$ pasos en llegar al % $75$. Cabe destacar que en el primer caso los estados en el ultimo paso son el $(0,0)$ con 14 nodos, el $(1,0)$ con 2 nodos y el $(0,1)$ por lo tanto todavía hay posibillidad de interacción. Pero en el segundo caso la población mayoritaria nunca podra crecer, justamente el estado de la publicidad $(1,1)$, pues los nodos restantes tienen estado $(0,0)$ y al no compartir ningun atributo, no podran interactuar con ningun vecino distinto (en caso que haya) ni la publicidad los afectara. Podríamos de decir que el sistema en general llego a una ***diferencia irreconciliable***.
 
 ---
 Ahora para $L=10,F=8,Q=2$
