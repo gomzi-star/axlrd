@@ -29,10 +29,10 @@ Y por ultimo  $F=5,Q=5$
   <img src="images/Cuadrada(5-5).png" width="70%">
 </p>
 
-## Red Cuadrada, Triangular y Grafo Completo sobre $F=10$
+## $F=10$
 Fijamos ahora $F=10$, y variamos $L,Q$ y la topología de la red en grafos regulares de grado 4, 3 y grafos completos.
 
-Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.
+Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.  Para este caso la red triangular y la cuadrada convergen a una velocidad similiar, claramente llega a un estado monocultural $200$ pasos antes.
 <p align="center">
   <img src="images/F10(4-2)Cuadrada.png" width="70%">
 </p>
@@ -45,7 +45,7 @@ Primero para $L=4,Q=2$ comparamos sobre $t=600$ pasos.
   <img src="images/F10(4-2)AllvAll.png" width="70%">
 </p>
 
-A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ y comparamos sobre $t=12000$ pasos.
+A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ y comparamos sobre $t=12000$ pasos. Ahora si se nota una diferencia entre la red cuadrada, que logra converger, y la red triangular que apenas llega al $\%55.55$ de poblacón mayoritaria. Sigue siendo notable la rapidez la red completa, con un gran salto entre el tiempo $t=4000$ con $\% 5.55$ al tiempo $t=8000$ con la totalidad. 
 <p align="center">
   <img src="images/F10(6-4)Cuadrada.png" width="70%">
 </p>
@@ -57,7 +57,7 @@ A continuación aumentamos el tamaño del sitema y las posibilidades  $L=6,Q=4$ 
   <img src="images/F10(6-4)AllvAll.png" width="70%">
 </p>
 
-Manteniendo las posibilidades $Q=4$ con un mayor tamaño $L=8$ y comparamos sobre $t=30000$ pasos.
+Manteniendo las posibilidades $Q=4$ con un mayor tamaño $L=8$ y comparamos sobre $t=30000$ pasos. Nuevamente se ve la diferencia entre la red triangular y la cuadrada, aunque en este caso particular, la convergencia de la red cuadrada es parecida a la del grafo completo.
 <p align="center">
   <img src="images/F10(8-4)Cuadrada.png" width="70%">
 </p>
@@ -70,7 +70,7 @@ Manteniendo las posibilidades $Q=4$ con un mayor tamaño $L=8$ y comparamos sobr
   <img src="images/F10(8-4)AllvAll.png" width="70%">
 </p>
 
-Seguimos con $L=10,Q=5$
+Seguimos con $L=10,Q=5$ sobre $90000$ pasos. En este caso los tres modelos convergen al final, con diferencias en la proporcion de salto desde el antepenultimo estado reportado, digamos: $100/18=5.55$ para la red cuadrada, $100/50=2$ para la triangular y $100/16=6.25$ para la completa. 
 <p align="center">
   <img src="images/F10(10-5)Cuadrada.png" width="70%">
 </p>
@@ -81,7 +81,7 @@ Seguimos con $L=10,Q=5$
   <img src="images/F10(10-5)AllvAll.png" width="70%">
 </p>
 
-Y por ultimo aumentamos masivamente el tamaño $L=18$ con la misma cantidad de opciones anterior $Q=5$
+Y por ultimo aumentamos masivamente el tamaño $L=18$ con la misma cantidad de opciones anterior $Q=5$ comparando también a $90000$ pasos. En este ejémplo ve nuevamente una mucho mayor rapidez en convergencia de la red cuadra. Como siempre gana la completa y con aun mayor proporción de salto al final $3.21$ en la caudrada vs $6.66$ en la completa.
 <p align="center">
   <img src="images/F10(18-5)Cuadrada.png" width="70%">
 </p>
@@ -92,7 +92,7 @@ Y por ultimo aumentamos masivamente el tamaño $L=18$ con la misma cantidad de o
   <img src="images/F10(18-5)AllvAll.png" width="70%">
 </p>
 
-No probamos para $Q\geq 6$, pues el mapeo de colores consume mas recursos de los disponibles.
+> No probamos para $Q\geq 6$, pues el mapeo de colores consume mas recursos de los disponibles.
 
 ## $Q$ vs $S_{max}$ en un Red Cuadrda
 Comparamos ahora la proporicion de la población mayoritaria $100\cdot (S_{max}/N)$ según la cantidad de posibilidades $Q$, en grafos regulares de grado 4 para distintos valores de $L$ y $F$.
@@ -129,9 +129,7 @@ Y después $L=10,F=8,Q=2$
   <img src="images/ScaleFreePub(10-8-2).png" width="70%">
 </p>
 
-Por último graficamos $Q$ vs $100(S_{max}/N)$ en el tamaño 	$L=4$ con $F=10$.  Variamos para los naturales $Q\in[1,100]$ con promedio de $30$ evoluciónes por caso.
-
-En el primer caso elegimos evoluciónes de $1000$ pasos y para el segundo de $10000$ pasos, mostando en verde los valores de la red sin publividad y en rojo los de la red con publicidad activa
+Por último graficamos $Q$ vs $100(S_{max}/N)$ en el tamaño 	$L=4$ con $F=10$.  Variamos para los naturales $Q\in[1,100]$ con promedio de $30$ evoluciónes por caso. En el primer caso elegimos evoluciónes de $1000$ pasos y para el segundo de $10000$ pasos, mostando en verde los valores de la red sin publividad y en rojo los de la red con publicidad activa
 <p align="center">
   <img src="images/QvSmax ScaleFree(4-10-1e3).png" width="40%">
   <img src="images/QvSmax ScaleFree(4-10-1e4).png" width="40%">
