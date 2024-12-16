@@ -20,9 +20,11 @@
 <p align="center">
   <img src="images/F10(4-2)Cuadrada.png" width="60%">
 </p>
+
 <p align="center">
   <img src="images/F10(4-2)Triangular.png" width="60%">
 </p>
+
 <p align="center">
   <img src="images/F10(4-2)AllvAll.png" width="60%">
 </p>
@@ -34,6 +36,7 @@
 <p align="center">
   <img src="images/F10(6-4)Triangular.png" width="60%">
 </p>
+
 <p align="center">
   <img src="images/F10(6-4)AllvAll.png" width="60%">
 </p>
@@ -42,9 +45,11 @@
 <p align="center">
   <img src="images/F10(8-4)Cuadrada.png" width="60%">
 </p>
+
 <p align="center">
   <img src="images/F10(8-4)Triangular.png" width="60%">
 </p>
+
 <p align="center">
   <img src="images/F10(8-4)AllvAll.png" width="60%">
 </p>
@@ -85,11 +90,16 @@
 ## Grafos Scale Free con y sin 'publicidad'
 <p align="center">
   <img src="images/ScaleFree(4-2-2).png" width="40%">
+</p>
+
+<p align="center">
   <img src="images/ScaleFreePub(4-2-2).png" width="40%">
 </p>
 
 <p align="center">
   <img src="images/ScaleFree(10-8-2).png" width="40%">
+</p>
+<p align="center">
   <img src="images/ScaleFreePub(10-8-2).png" width="40%">
 </p>
 
